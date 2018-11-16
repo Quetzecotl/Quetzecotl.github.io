@@ -6,21 +6,23 @@
 		display: flex; flex-wrap: wrap; justify-content: center;}
     p{
     	margin: 0px}
-	.title{
+	.row{
+    	width: 100%; display: flex; justify-content: center;}
+    .title{
 		text-align: center; width: 100%;}
 	.teamheader{
-		max-width: 30%; min-width: 150px; margin-left:30%; margin-right:30%; text-align: center; padding: 10px;
+		max-width: 30%; min-width: 150px;  text-align: center; padding: 10px;
 		border-radius: 10px; border-color: gold; border-style: solid; border-width: 10px;
 		background-color: blue; color: orange;}
 	.highlights{
-		max-width: 40%; min-width: 200px; margin-left:30%; margin-right:30%; margin-top: 10px; padding: 10px;
+		max-width: 40%; min-width: 200px;  margin-top: 10px; padding: 10px;
 		border-radius: 10px;
 		background-color: tan; color: black;}
 	.roster{
 		Display: flex; flex-wrap: wrap; justify-content: center;
-		max-width: 40%; min-width: 200px; margin-left:30%; margin-right:30%; margin-top: 10px; padding: 10px;
+		max-width: 80%; min-width: 200px; margin-top: 10px; padding: 10px;
 		border-radius: 10px;
-		background-color: tan; color: black;}
+		 color: black;}
 	.playerinfo{
 		display: flex; flex-wrap: wrap; justify-content: center;
 		border-radius: 10px; padding: 10px; margin: 10px; width: 150px; 
@@ -30,13 +32,18 @@
     .pictureplaceholder{
     	height: 150px; width: 130px; background-color: gold; margin: 10px 0px;}
 </style>
+<div class="row">
 <div class="teamheader">
 	<h1>Meet the LarZards!</h1>
 </div>
+</div>
+<div class="row">
 <div class="highlights">
 	<h2>Highlights</h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis nec dolor sit amet sollicitudin. Aenean congue odio a scelerisque varius. Aliquam suscipit, sapien vitae molestie rutrum, sem nisl maximus turpis, vel viverra turpis odio sit amet sem. Nam condimentum, quam eu ultrices varius, nunc quam dapibus dolor, sed convallis est nibh a lectus. Fusce scelerisque sit amet turpis in eleifend. Suspendisse ultrices ante non condimentum fermentum. Donec non justo dictum, rhoncus ante at, convallis orci. Suspendisse hendrerit a est a facilisis.</p>
-</div>	
+</div>
+</div>
+<div class="row">
 <div class="roster">
 	<h2 class="title">Roster</h2>
 	<div class="playerinfo">
@@ -117,5 +124,8 @@
         	Lorem ipsum dolor sit</p>
 	</div>
 </div>
+</div>
+<div class="row">
 <a href="">Ix Nay</a>
+</div>
 </div>
