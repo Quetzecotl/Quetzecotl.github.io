@@ -1,0 +1,261 @@
+<style>
+	
+@KeyFrames Banner {
+   	0% {background-image: url(Quetzecotl.github.io/Logo.png);
+		background-size: contain;
+	   	background-repeat: no-repeat;
+	    	background-position: center center;}
+	
+	100% {background-image: url(Quetzecotl.github.io/Logo.png);
+		background-size: contain;
+	   	background-repeat: no-repeat;
+	    	background-position: center center;}
+	
+}
+    .banneranimation { 
+      width: 80%; height: 300px; max-height: 40vh; margin: auto;
+      animation-name: Banner;
+      animation-delay: 0s;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-timing-function: linear;
+      }
+	
+	
+@media only screen and (orientation: landscape) {
+    html{
+		background-image: url(Quetzecotl.github.io/HPitch.jpg); background-attachment: fixed; background-size: cover;
+		background-repeat: no-repeat; background-position: center center;}
+}
+@media only screen and (orientation: portrait) {
+    html{
+		background-image: url(Quetzecotl.github.io/VPitch.jpg); background-attachment: fixed; background-size: cover;
+		background-repeat: no-repeat; background-position: center center;}
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	body{ 
+		display: flex; flex-wrap: wrap; justify-content: center;}
+    p{
+    	margin: 0px}
+	.row{
+    	width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center;}
+    .title{
+		text-align: center; width: 100%;}
+    .leftbanner { width: 80%; margin-top: 10px; margin-right: 0px; padding: 10px;
+		border-radius: 10px;
+		background-color: lightgrey; color: black;}
+    .highlights{
+		width: 80%; margin-top: -8px; margin-bottom: -8px; padding: 10px;
+		border-radius: 0px; 
+		background-color: lightgrey; color: black;}
+     .rightbanner {width: 80%; margin-top: 0px; margin-left: 0px; padding: 10px;
+		border-radius: 10px;
+		background-color: lightgrey; color: black;}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	body{ 
+		display: flex; flex-wrap: wrap; justify-content: center;}
+    p{
+    	margin: 0px}
+	.row{
+    	width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center;}
+    .title{
+		text-align: center; width: 100%;}
+    .leftbanner { max-width: 30%; margin-top: 10px; margin-right: 10px; padding: 10px;
+		border-radius: 10px;
+		background-color: lightgrey; color: black;}
+    .highlights{
+		max-width: 30%; margin-top: 10px; padding: 10px;
+		border-radius: 10px;
+		background-color: lightgrey; color: black;}
+    .rightbanner { max-width: 30%; margin-top: 10px; margin-left: 10px; padding: 10px;
+		border-radius: 10px;
+		background-color: lightgrey; color: black;}
+  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body{ 
+		display: flex; flex-wrap: wrap; justify-content: center;}
+    p{
+    	margin: 0px}
+	.row{
+    	width: 100%; display: flex; justify-content: center;}
+    .title{
+		text-align: center; margin: 0px;}
+	 .headline{
+    	border-bottom: solid; margin-top: 5px; margin-bottom: 5px;}
+     .leftbanner { max-width: 20%; margin-top: 10px; margin-right: 10px; padding: 10px;
+		border-radius: 10px;
+		background-color: lightgrey; color: black;}
+     .highlights{
+		max-width: 40%; min-width: 200px;  margin-top: 10px; padding: 10px;
+		border-radius: 10px;
+		background-color: lightgrey; color: black;}
+     .rightbanner { max-width: 20%; margin-top: 10px; margin-left: 10px; padding: 10px;
+		border-radius: 10px;
+		background-color: lightgrey; color: black;}
+     }
+        
+        .portrait {
+		width: 80%; margin: auto;}
+    .rostercards{
+		Display: flex; flex-wrap: wrap; justify-content: center;
+		max-width: 80%; min-width: 200px; margin-top: 10px; padding: 10px;
+		border-radius: 10px;
+		 color: black;}
+	.cardinfo { width: 80%; margin: auto;}
+	.playerinfo{
+		display: flex; flex-wrap: wrap; justify-content: center;
+		background-image: url(Quetzecotl.github.io/player_banner.png); 
+		background-size: 100%, 100%; background-repeat: no-repeat; background-position: center center;
+		border-radius: 0px; padding: 0px; margin: 10px; width: 200px; height: 278px;}
+    .centeredtext{
+    	width: 100%; text-align: center; margin: 0px;}
+    .accordion {
+    	background-color: #d4b037; color: black; cursor: pointer;
+    	padding: 5px; width: 80%; margin-top: 10px; margin-left: 10%; margin-right: 10%; 
+    	border: none; border-radius: 10px;
+    	text-align: center; outline: no-repeat; transition: 0.4s; display: flex;}
+	.active, .accordion:hover {
+    	background-color: #f2e655;}
+	.panel {
+    	padding: 0 18px;
+    	max-height: 0;
+    	overflow: hidden;
+   	transition: max-height 0.2s ease-out; display: flex; justify-content: center;}
+        
+</style>
+
+
+
+
+<div class="banneranimation"></div>
+
+<div class="row">
+	<div class="leftbanner">
+    	<h2 class="headline">Corsair Open</h2>
+    	<p>The playoffs have started!</p>
+        <p>Playoff Contenders:</p>
+        <ol style="margin: 0px">
+        	<li>LarZards</li>
+            <li>Gristle Valley Vegans</li>
+            <li>Da Klassik Boyz</li>
+            <li>Mud Run Browns</li>
+    	</ol>        
+    </div>
+    <div class="highlights">
+		<h2 class="headline">Highlights</h2>
+    	<p>After a crushing defeat at the hands of the Mud Run Browns the LarZards look to lick their wounds and steal a 3rd place victory in the playoffs.</p>
+	</div>
+    <div class="rightbanner">
+    	<h2 class="headline">The League</h2>
+    	<ul>
+            <li>Da Klassik Boyz</li>
+            <li><a href="http://www.littlearmydesigner.com/bb/6120266495164416/050550" target="_blank">Mud Run Browns</a></li>
+            <li>Gristle Valley Vegans</li>
+            <li>Hell Horde</li>
+            <li>LarZards</li>
+    	</ul>
+    </div>
+</div>
+
+<div class="row">
+
+<div class="split" style="width: 100%; text-align: center">
+	<button class="accordion"><h2 class="centeredtext">Team Roster</h2></button>
+<div class="panel">
+	<div class="rostercards">
+		<div class="playerinfo">
+		<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Ohm</h3>
+		<p class="cardinfo">Postition: Kroxigor</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="playerinfo">
+			<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Alfa</h3>
+		<p class="cardinfo">Postition: Saurus</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="playerinfo">
+			<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Beta</h3>
+		<p class="cardinfo">Postition: Saurus</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+	    <div class="playerinfo">
+			<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Cappa</h3>
+		<p class="cardinfo">Postition: Saurus</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="playerinfo">
+		<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Gamma</h3>
+		<p class="cardinfo">Postition: Saurus</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="playerinfo">
+			<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Epsi</h3>
+		<p class="cardinfo">Postition: Saurus</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="playerinfo">
+		<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Rhoa</h3>
+		<p class="cardinfo">Postition: Saurus</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="playerinfo">
+			<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Name</h3>
+		<p class="cardinfo">Postition: Skink</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="playerinfo">
+			<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Name</h3>
+		<p class="cardinfo">Postition: Skink</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="playerinfo">
+			<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Name</h3>
+		<p class="cardinfo">Postition: Skink</br>
+			Lorem ipsum dolor sit amet</p>
+		</div>
+		<div class="playerinfo">
+			<img class="portrait" src="Quetzecotl.github.io/Carrier.png">
+		<h3 class="centeredtext">Name</h3>
+		<p class="cardinfo">Postition: Skink</br>
+			Lorem ipsum dolor sit</p>
+		</div>
+	    </div>
+	    </div>
+    </div>
+</div>
+</div>
+<div class="row">
+<a href="Quetzecotl.github.io/animation.html">Ix Nay</a>
+</div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
