@@ -41,6 +41,10 @@
     	display: flex; width: 100%; flex-wrap: wrap;
     }
     
+    .row2 {
+    	display: flex; width: 100%; flex-wrap: wrap-reverse; 
+    }
+    
 	.centered {
 		text-align: center
 	}
@@ -54,11 +58,14 @@
 	}
     
     .pic {
-    	background-color: white; height: 300px; width: 300px;
+    	background-color: white; flex: auto; 
+        width: 300px; min-height: 300px; 
     }
     
     .info {
-    	flex:3;
+    	flex: 5 5 auto;
+        padding: 10px;
+        width: 300px;
 	}
     
 </style>
@@ -75,12 +82,16 @@
   	</div>
 
     <div class="info lightestblue">
+    	<h3 class="teamname">Team Name</h3>
+        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
   	</div>
 
 </div>
-<div class="row">
+<div class="row2">
 
-    <div class="info lightestblue">
+    <div class="info lightblue">
+    	<h3 class="teamname">Team Name</h3>
+        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
   	</div>
     
     <div class="pic">
@@ -89,13 +100,38 @@
 </div>
 <div class="row">
 
+	<div class="pic">
+  	</div>
+	
     <div class="info lightestblue">
+    	<h3 class="teamname">Team Name</h3>
+        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
   	</div>
     
-  	<div class="pic">
+</div>
+<div class="row2">
+
+    <div class="info lightblue">
+    	<h3 class="teamname">Team Name</h3>
+        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+  	</div>
+    
+    <div class="pic">
   	</div>
 
 </div>
+<div class="row">
+	
+    <div class="pic">
+  	</div>
+
+    <div class="info lightestblue">
+    	<h3 class="teamname">Team Name</h3>
+        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+  	</div>
+    
+</div>
+
 
 </body>
 </html>
