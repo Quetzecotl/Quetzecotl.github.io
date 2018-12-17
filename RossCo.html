@@ -46,28 +46,45 @@
      }
     
 	.title {
-		color: #ff8000;
-  text-shadow:
-   -1px -1px 0 #d4b037,  
-    1px -1px 0 #d4b037,
-    -1px 1px 0 #d4b037,
-     1px 1px 0 #d4b037;
+        color: #ff8000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #d4b037;
      font-family:Book Antiqua;
      font-variant: small-caps;
      font-weight: 900;
+     
 	}
-    
-    .maintitle {
-		color: #ff8000;
-  text-shadow:
-   -1px -1px 0 #d4b037,  
-    1px -1px 0 #d4b037,
-    -1px 1px 0 #d4b037,
-     1px 1px 0 #d4b037;
+   
+   a {
+   
+  	color: #ff8000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #d4b037;
+  	text-decoration: none;
      font-family:Book Antiqua;
      font-variant: small-caps;
      font-weight: 900;
-     font-size: 150%;
+   }
+   
+   a:hover {
+   
+  	color: #092834;
+    -webkit-text-stroke-color: #092834;
+     font-family:Book Antiqua;
+     font-variant: small-caps;
+     font-weight: 900;
+   }
+   
+  
+    .maintitle {
+        color: #ff8000;
+        -webkit-text-fill-color: #ff8000;
+  		-webkit-text-stroke-width: 1px;
+  		-webkit-text-stroke-color: #d4b037;
+     font-family: Courier New;
+     font-variant: small-caps;
+     font-weight: normal;
+     font-size: 80px;
 	}
     
     .pic {
@@ -107,7 +124,7 @@
 <body>
 
 <div class="titlewrap">
-	<h1 class="centered title"><span class="maintitle">RossCo</span> | The LarZards</h1>	
+	<h1 class="centered"><span class="maintitle">RossCo</span><span class="title"> | <a href="Quetzecotl.github.io">The LarZards</a></span></h1>	
 </div>
 
 <div class="row">
