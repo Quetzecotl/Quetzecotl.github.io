@@ -1,17 +1,20 @@
 <head><style>
-@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Cinzel|" rel="stylesheet');
 h2{margin: 0px;}
 body{ 
 	background-color: #091d34; margin: 0px;
 	}
-
+a{ color: inherit; text-decoration: none;}
 .topbar {
 	padding: 5px 15px 0px 15px; border-bottom: solid; border-color: #1461b8; display: flex; flex-wrap: wrap; align-items: baseline; background-color: #d4e4f7; position: fixed; top: 0; left 0; width: 100%; box-sizing: border-box;  
     }
 h1{
   color: #FC7307; margin: 0px;
   }
-._2RM{
+._2{
+	font-size: 1.7em;
+    }
+._RM{
   font-size: 1.5em;
   }
 .row{display: flex;  background-color: #d4e4f7;}
@@ -20,24 +23,64 @@ h1{
 ._9{
 font-family: 'Cinzel Decorative', cursive;
 }
+.inline{display: inline;}
+.menuitem{}
+.menuitem:hover{text-shadow: 2px 2px 2px #aaa;}
 .BannerImage{width: 90%; height: 300px; background-color: white; margin: auto; text-align: center; padding: 100px; box-sizing: border-box;}
 
-
+.flexbox{
+	display: flex; flex-wrap: wrap; justify-content: center; padding: 0px; width: 90%; margin: auto; margin-top: 15px;
+    }
+    
+.card {
+	width: 200px; height: 200px; background-color: #ffffffAA;  margin: 1px; 
+    }
+    
+.card:hover {
+	width: 200px; height: 200px; background-color: #ffffff;  margin: 1px; 
+    }
+    
 </style></head>
 
 <body>
 
 
 <div class="topbar">
-	<h1 class="_9 col"><span class="_2RM">2RM</span>odeling</h1> <h2 class="righted col" style="display: inline; color: #341c09">Models | About Us | Contact</h2>
+	<h1 class="_9 col"><span class="_2">2</span><span class="_RM">RM</span>odeling</h1> 
+    <div class="righted col" style="display: inline; color: #341c09">
+    	<h2 class="inline menuitem"><a href=""> Models </a>|</h2>
+        <h2 class="inline menuitem"><a href=""> About Us </a>|</h2>
+        <h2 class="inline menuitem"><a href=""> Contact </a></h2></div>
 
 </div>
-<div style="width: 100%; height: 100px"></div>
+<div style="width: 100%; height: 110px"></div>
 <div class="BannerImage">
 <p >Banner Image Here</p>
 </div>
 
+<div class="flexbox">
 
-
+	<a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    <a href=""><div class="card"></div></a>
+    
+    
+</div>
 
 </body>
