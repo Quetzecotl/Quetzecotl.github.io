@@ -28,15 +28,12 @@ font-family: 'Cinzel Decorative', cursive;
 .menuitem:hover{text-shadow: 1px 1px 1px #aaa;}
 	
   @KeyFrames Banner {
-    	16% {background-image: url(/banner1.png), url(/banner2.png), url(/banner3.png);
+    	0% {background-image: url(/banner1.png), url(/banner2.png), url(/banner3.png);
 	  	opacity: 1, 0, 0;
 	  	}
-	49% {background-image: url(/banner1.png), url(/banner2.png), url(/banner3.png);
+	100% {background-image: url(/banner1.png), url(/banner2.png), url(/banner3.png);
 	  	opacity: 0, 1, 0;}
-	82% {background-image: url(/banner1.png), url(/banner2.png), url(/banner3.png);
-	  	opacity: 0, 0, 1;}
-    	100% {background-image:url(/banner1.png), url(/banner2.png), url(/banner3.png);
-	  	opacity: 1, 0, 0;}
+	
     }
     .BannerImage { 
       width: 90%; height: auto; background-color: lightgrey; background-size: 100%, background-position: center; margin: auto; text-align: center; padding: 100px; box-sizing: border-box;
@@ -44,7 +41,7 @@ font-family: 'Cinzel Decorative', cursive;
       animation-delay: 2s;
       animation-duration: 6s;
       animation-iteration-count: infinite;
-      animation-direction: normal;
+      animation-direction: alternate;
       animation-timing-function: ease;
       }
 .flexbox{
@@ -75,7 +72,7 @@ font-family: 'Cinzel Decorative', cursive;
 </div>
 <div style="width: 100%; height: 120px"></div>
 <div class="rowwrap"><div class="BannerImage">
-<p >Banner Image Here</p>
+<p >Banner Image Here!</p>
 </div></div>
 
 <div class="rowwrap"><div class="flexbox">
