@@ -56,6 +56,12 @@ font-family: 'Cinzel Decorative', cursive;
       animation-direction: normal;
       animation-timing-function: linear;
     }
+
+.BannerImageContainer::before{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url(/banner1.png) url(/banner2.png) url(/banner3.png);
+}
+	
 .BannerImageContainer::after{
 	content: '';
 	display: block;
