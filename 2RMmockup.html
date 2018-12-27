@@ -30,6 +30,37 @@ font-family: 'Cinzel Decorative', cursive;
 .menuitem{ font-family: 'Cinzel', cursive;}
 .menuitem:hover{text-shadow: 1px 1px 1px #aaa;}
 
+@KeyFrames Banner {
+	0%		{background-image: url(/banner1.png); opacity: 1; background-size: cover; background-position: center center;}
+    14%		{background-image: url(/banner1.png); opacity: 1; background-size: cover; background-position: center center;}
+    15%		{background-image: url(/banner1.png); opacity: .5; background-size: cover; background-position: center center;}
+	17%		{background-image: url(/banner3.png); opacity: .5; background-size: cover; background-position: center center;}
+    18%		{background-image: url(/banner3.png);opacity: 1; background-size: cover; background-position: center center;}
+    47%		{background-image: url(/banner3.png);opacity: 1; background-size: cover; background-position: center center;}
+    48%		{background-image: url(/banner3.png); opacity: .5; background-size: cover; background-position: center center;}
+    50%		{background-image: url(/banner2.png); opacity: .5; background-size: cover; background-position: center center;}
+    51%		{background-image: url(/banner2.png); opacity: 1; background-size: cover; background-position: center center;}
+    80%		{background-image: url(/banner2.png); opacity: 1; background-size: cover; background-position: center center;}
+    81%		{background-image: url(/banner2.png); opacity: .5; background-size: cover; background-position: center center;}
+    83%		{background-image: url(/banner1.png); opacity: .5; background-size: cover; background-position: center center;}
+    84%		{background-image: url(/banner1.png); opacity: 1; background-size: cover; background-position: center center;}
+	100%	{background-image: url(/banner1.png); opacity: 1; background-size: cover; background-position: center center;}
+	}
+
+.BannerImageContainer{
+	width: 90%; padding-top: 50.4%; margin: auto;
+    animation-name: Banner;
+      animation-delay: 0s;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-timing-function: linear;
+    }
+    
+.BannerImageContainer:hover{
+	animation-play-state: paused;
+    }
+    
 .flexbox{
 	display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; padding: 0px; width: 90%; margin: auto; margin-top: 30px; z-index: 1;
     }
@@ -57,6 +88,12 @@ font-family: 'Cinzel Decorative', cursive;
 
 </div>
 <div style="width: 100%; height: 120px"></div>
+
+<div class="BannerImageContainer">
+
+</div>
+
+
 
 <div class="rowwrap"><div class="flexbox">
 
