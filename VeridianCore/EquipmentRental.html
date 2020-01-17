@@ -21,7 +21,7 @@
     for (var i = 0; i < data.length; i++) {
     $(".post").append(
     '<div class="RentalWeapons">'
-      + '<div class="nameblock">' + '<p class="name">' + 'object.data[1].name' + '</p>' + '</div>'
+      + '<div class="nameblock">' + '<p class="name">' + 'data["name"]' + '</p>' + '</div>'
       + '<div class="rng-sblock">' + '<p class="rng-s">' + 'data.object[i].rng-s' + '</p>' + '</div>'
       + '<div class="rng-lblock">' + '<p class="rng-l">' + 'data.rng-l' + '</p>' + '</div>'
       + '<div class="acc-sblock">' + '<p class="acc-s">' + 'data[i].acc-s' + '</p>' + '</div>'
