@@ -1,1 +1,47 @@
+<style>
+  
+</style>
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script type='text/javascript'>    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1PJg6ajQP74HLegNEPHkoPHgd9n_livIlXiVKsSn3enY/edit?usp=sharing';
+
+  function init() {
+    Tabletop.init( { key: publicSpreadsheetUrl,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    alert('Successfully processed!')
+    console.log(data);
+
+    for (var i = 0; i < data.length; i++) {
+    $(‘.post’).append(
+    ‘<div class=”RentalWeapons”>’
+      + '<div class="nameblock">' + '<p class="name">' + 'data[i].name' + '</p>' + '</div>'
+      + '<div class="rng-sblock">' + '<p class="rng-s">' + 'data[i].rng-s' + '</p>' + '</div>'
+      + '<div class="rng-lblock">' + '<p class="rng-l">' + 'data[i].rng-l' + '</p>' + '</div>'
+      + '<div class="acc-sblock">' + '<p class="acc-s">' + 'data[i].acc-s' + '</p>' + '</div>'
+      + '<div class="acc-lblock">' + '<p class="acc-l">' + 'data[i].acc-l' + '</p>' + '</div>'
+      + '<div class="strblock">' + '<p class="str">' + 'data[i].str' + '</p>' + '</div>'
+      + '<div class="apblock">' + '<p class="ap">' + 'data[i].ap' + '</p>' + '</div>'
+      + '<div class="dblock">' + '<p class="d">' + 'data[i].d' + '</p>' + '</div>'
+      + '<div class="rng-lblock">' + '<p class="rng-l">' + 'data[i].ammo' + '</p>' + '</div>'
+      + '<div class="rng-lblock">' + '<p class="rng-l">' + 'data[i].traits' + '</p>' + '</div>'
+      + '<div class="rng-lblock">' + '<p class="rng-l">' + 'data[i].rental-cost' + '</p>' + '</div>'
+      + '<div class="rng-lblock">' + '<p class="rng-l">' + 'data[i].quantity' + '</p>' + '</div>'
+    + '</div>');}
+    
+  }
+
+  window.addEventListener('DOMContentLoaded', init)
+</script>
+
+<body>
+
+<div class=”post”>
+
+</div>
+
+</body>
