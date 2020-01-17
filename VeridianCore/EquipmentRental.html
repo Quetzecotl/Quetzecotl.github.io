@@ -1,5 +1,5 @@
 <style>
-  
+  .post {}
 </style>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
@@ -17,7 +17,7 @@
     console.log(data);
 
     for (var i = 0; i < data.length; i++) {
-    $(‘.post’).append(
+    $('.post').append(
     ‘<div class=”RentalWeapons”>’
       + '<div class="nameblock">' + '<p class="name">' + 'data[i].name' + '</p>' + '</div>'
       + '<div class="rng-sblock">' + '<p class="rng-s">' + 'data[i].rng-s' + '</p>' + '</div>'
